@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "name": "fusebox-circular",
+  "version": "1.0.0",
+  "author": "Jules Randolph <jules.sam.randolph@gmail.com>",
+  "license": "UNLICENSED",
+  "types": "lib/index.d.ts",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node fusebox.js",
+    "build": "tsc -p .",
+    "test": "jest ./src",
+    "graph": "yarn run build && madge lib/modules/module-a.js -i images/graph.jpg"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.6",
+    "@types/node": "^6.0.92",
+    "fuse-box": "^2.5.0-beta.1",
+    "jest": "^21.2.1",
+    "madge": "^2.2.0",
+    "ts-jest": "^21.2.1",
+    "typescript": "2.5",
+    "update-notifier": "^2.3.0"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "skipBabel": true
+      }
+    },
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__specs__/.*\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  }
+}

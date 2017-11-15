@@ -1,0 +1,14 @@
+{
+  "exclude": ["**/__specs__/*"],
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "es5",
+    "declaration": false,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "allowSyntheticDefaultImports": false,
+    "lib": ["es6", "es7", "dom"],
+    "sourceMap": true
+  }
+}
